@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useTheme } from "styled-components";
+import DatatableWrapper from "../DataTable/DataTableWrapper";
 import Dropdown from "../microcomponents/Dropdown/Dropdown";
 import Pagination from "../Pagination/Pagination";
 import Search from "../Search/Search";
@@ -237,6 +238,7 @@ const Viewer = () => {
               verticalContainerPadding="2px"
               horizontalContainerPadding="2px"
               textColor={theme.colors.primary.normal}
+              placeholderColor={theme.colors.primary.normal}
             />
           </StyledGridContainer>
         </StyledCard>
@@ -350,14 +352,14 @@ const Viewer = () => {
 
 
         <StyledCard
-          width="500px"
-          height="300px"
+          width="700px"
+          height="450px"
           backgroundColor={theme.colors.secondary.normal}
           margin="auto"
         >
           <StyledGridContainer
             gridTemplateColumns="1fr"
-            gridTemplateRows="repeat(2, 1fr)"
+            gridTemplateRows="1fr 5fr"
             gridGap="1rem"
             width="100%"
             verticalPadding="0.6rem"
@@ -371,7 +373,7 @@ const Viewer = () => {
               Data Table
             </StyledH3Title>
             <StyledFlexContainer>
-              
+                <DatatableWrapper />
             </StyledFlexContainer>
 
           </StyledGridContainer>

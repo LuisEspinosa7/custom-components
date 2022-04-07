@@ -33,6 +33,12 @@ export const StyledSearchInput = styled.input`
     padding: ${props => props.verticalPadding ? props.verticalPadding : '5px'} ${props => props.horizontalPadding ? props.horizontalPadding : '10px'};
     font-size: ${props => props.fontSize ? props.fontSize : '20px'};
     color: ${props => props.textColor ? props.textColor : 'rgb(108, 108, 108)'};
+
+    &::placeholder {
+        color: ${props => props.placeholderColor ? props.placeholderColor : 'rgb(108, 108, 108)'};
+    }
+
+
 `
 StyledSearchInput.displayName = 'input';
 

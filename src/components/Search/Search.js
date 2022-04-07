@@ -24,7 +24,8 @@ const Search = ({
   buttonHorizontalMargin,
   verticalContainerPadding,
   horizontalContainerPadding,
-  textColor
+  textColor,
+  placeholderColor
 }) => {
   const searchInput = useRef();
 
@@ -46,6 +47,7 @@ const Search = ({
           verticalPadding={verticalPadding}
           horizontalPadding={horizontalPadding}
           textColor={textColor}
+          placeholderColor={placeholderColor}
         />
       </>
     );
@@ -63,6 +65,7 @@ const Search = ({
           verticalPadding={verticalPadding}
           horizontalPadding={horizontalPadding}
           textColor={textColor}
+          placeholderColor={placeholderColor}
         />
         <StyledSearchButton
           iconWidth={iconWidth}

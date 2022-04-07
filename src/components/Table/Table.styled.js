@@ -26,7 +26,7 @@ export const StyledTableHeaderColumn = styled.th`
 StyledTableHeader.displayName = 'th';
 
 export const StyledTableBodyRow = styled.tr`
-    border-bottom: 1px solid #dddddd;
+    //border-bottom: 1px solid #dddddd;
     transition: all 0.3s;
     color: ${props => props.colorNormalRow ? props.colorNormalRow : '#f3f3f3'};
 
