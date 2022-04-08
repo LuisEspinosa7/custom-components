@@ -9,6 +9,7 @@ import { StyledFlexContainer } from "../styles/containers/FlexContainer.styled";
 import { StyledGridContainer } from "../styles/containers/GridContainer.styled";
 import { StyledSpinner } from "../styles/loaders/Spinner.styled";
 import TypingLoader from "../styles/loaders/Typing/TypingLoader";
+import { StyledH2Title } from "../styles/typography/H2Title.styled";
 import { StyledH3Title } from "../styles/typography/H3Title.styled";
 import { StyledParagraph } from "../styles/typography/Paragraph.styled";
 import Table from "../Table/Table";
@@ -315,7 +316,6 @@ const Viewer = () => {
 
 
 
-
       <StyledGridContainer
         gridTemplateColumns="repeat(1, 1fr)"
         gridTemplateRows="repeat(1, 1fr)"
@@ -359,6 +359,19 @@ const Viewer = () => {
         </StyledCard>
 
       </StyledGridContainer>
+
+
+      <StyledFlexContainer
+        background={theme.colors.primary.normal}
+        color={theme.colors.secondary.normal}
+        flexDirection="column"
+        smallMargin="1rem 0">
+        <StyledH2Title
+          fontWeight="900"
+          fontFamily="Beau Rivage"
+          color={theme.colors.accent.normal}
+          bigFontSize="2rem"> And finally...</StyledH2Title>
+      </StyledFlexContainer>
 
 
       <StyledGridContainer
