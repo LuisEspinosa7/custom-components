@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/custom-components/static/js/main.af455598.js",
+    "index.html": "/custom-components/index.html",
+    "main.af455598.js.map": "/custom-components/static/js/main.af455598.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.af455598.js"
+  ]
+}
