@@ -68,6 +68,7 @@ const DatatableWrapper = () => {
         rowsPerPageList={rowsPerPageList}
         dataError={dataError}
         theme={theme}
+        minWidth="325px"
       />
     </>
   );
@@ -75,9 +76,9 @@ const DatatableWrapper = () => {
 
 
 /* Table configurations */
-const headers = ["Id", "Name", "Username", "Email"];
-const dataFields = ["id", "name", "username", "email"];
-const searchableColumns = ["name", "username", "email"];
+const headers = ["Id", "Name"];
+const dataFields = ["id", "name"];
+const searchableColumns = ["name"];
 
 const rowsPerPageList = [
   {

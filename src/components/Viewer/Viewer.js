@@ -367,18 +367,18 @@ const Viewer = () => {
         gridGap="1rem"
         width="100%"
         verticalPadding="1rem"
-        horizontalPadding="1rem">
+        horizontalPadding="1rem"
+        >
 
         <StyledCard
-          width="700px"
-          height="500px"
+          width="365px"
+          height="450px"
           backgroundColor={theme.colors.secondary.normal}
           margin="auto"
         >
           <StyledGridContainer
             gridTemplateColumns="1fr"
-            gridTemplateRows="1fr 5fr"
-            gridGap="1rem"
+            gridTemplateRows="1fr 9fr"
             width="100%"
             verticalPadding="0.6rem"
             horizontalPadding="0.6rem"

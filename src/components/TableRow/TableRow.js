@@ -31,18 +31,15 @@ const TableRow = ({
           disabled={checkboxDisabled}
         />
       </StyledDataTableBodyColum>
-      <StyledDataTableBodyColum>
-        {element[`${rowColumns[0]}`]}
-      </StyledDataTableBodyColum>
-      <StyledDataTableBodyColum>
-        {element[`${rowColumns[1]}`]}
-      </StyledDataTableBodyColum>
-      <StyledDataTableBodyColum>
-        {element[`${rowColumns[2]}`]}
-      </StyledDataTableBodyColum>
-      <StyledDataTableBodyColum>
-        {element[`${rowColumns[3]}`]}
-      </StyledDataTableBodyColum>
+
+    {rowColumns && rowColumns.map(rowColumn => {
+      return (
+        <StyledDataTableBodyColum key={`${element['id']+rowColumn} `}>
+          {element[`${rowColumn}`]}
+        </StyledDataTableBodyColum>
+      )
+    })
+    }
     </StyledDataTableBodyRow>
   );
 };

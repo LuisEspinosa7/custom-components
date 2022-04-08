@@ -21,7 +21,8 @@ const Datatable = ({
   searchableColumns,
   rowsPerPageList,
   dataError,
-  theme
+  theme,
+  minWidth
 }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [rowsPerPage, setRowsPerPage] = useState(rowsPerPageList[0].value);
@@ -167,6 +168,7 @@ const Datatable = ({
             iconHeight="30px"
             fontSize="1.3rem"
             text="No results!"
+            color={theme.colors.primary.normal}
           />
         </td>
       </tr>
@@ -234,7 +236,8 @@ const Datatable = ({
             />
           </div>
         </StyledFlexContainer>
-        <StyledDataTableContainer margin="0px">
+        <StyledDataTableContainer margin="0px"
+          minWidth={minWidth}>
           <TableHeader headers={headers} theme={theme} />
 
           <tbody>
