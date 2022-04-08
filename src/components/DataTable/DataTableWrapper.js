@@ -86,11 +86,11 @@ const rowsPerPageList = [
   },
   {
     key: 2,
-    value: 6,
+    value: 4,
   },
   {
     key: 3,
-    value: 10,
+    value: 5,
   },
 ];
 

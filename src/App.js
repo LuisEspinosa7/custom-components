@@ -11,13 +11,19 @@ function App() {
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyles />
-        <StyledMainContainer>
+        <StyledMainContainer
+          gridTemplateColumns="1fr"
+          gridTemplateRows="6rem auto"
+          bigGridTemplateColumns="1fr"
+          bigGridTemplateRows="9rem auto">
           <Header />
           <StyledFlexContainer
             maxWidth="100%"
             background={theme.colors.primary.normal}
             color={theme.colors.secondary.normal}
-            flexDirection="column"> 
+            flexDirection="column"
+            bigVerticalPadding="7rem"
+            bigHorizontalPadding="0"> 
               <Viewer />
           </StyledFlexContainer>
         </StyledMainContainer>

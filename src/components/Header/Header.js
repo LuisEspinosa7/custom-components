@@ -12,13 +12,16 @@ const Header = () => {
       gap="0.3rem"
       background={theme.colors.primary.normal}
       color={theme.colors.secondary.normal}
-      flexDirection="column">
+      flexDirection="column"
+      smallMargin="1rem 0">
       <StyledH1Title
-        fontWeight="500">Custom Components</StyledH1Title>
+        fontWeight="500"
+        bigFontSize="3rem">Custom Components</StyledH1Title>
       <StyledH2Title
         fontWeight="300"
         fontFamily="Beau Rivage"
-        color={theme.colors.secondary.lighter}> (by Luis Espinosa)</StyledH2Title>
+        color={theme.colors.secondary.lighter}
+        bigFontSize="2rem"> (by Luis Espinosa)</StyledH2Title>
     </StyledFlexContainer>
   )
 }

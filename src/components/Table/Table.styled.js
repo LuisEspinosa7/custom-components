@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const StyledTableContainer = styled.table`
     border-collapse: collapse;
-    margin: 25px 0;
+    margin: ${props => props.verticalMargin ? props.verticalMargin : ''} ${props => props.horizontalMargin ? props.horizontalMargin : ''};
     font-size: 0.9em;
-    min-width: 400px;
+    min-width: ${props => props.tableMinWidth ? props.tableMinWidth : '300px'};
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);

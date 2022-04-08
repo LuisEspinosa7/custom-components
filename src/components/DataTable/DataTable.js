@@ -183,7 +183,7 @@ const Datatable = ({
                 borderThickness="5px"
                 width="50px"
                 height="50px"
-                color="#000"
+                color={theme.colors.primary.normal}
               />
             </StyledFlexContainer>
           </td>

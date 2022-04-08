@@ -17,6 +17,30 @@ export const StyledGridContainer = styled.div`
     color: ${props => props.color ? props.color : ''};
     box-shadow: ${props => props.boxShadow ? props.boxShadow : ''};
     border-radius: ${props => props.borderRadius ? props.borderRadius : ''};
+
+    // Mobile
+    @media screen and (max-width: 767px) {
+        grid-template-columns: ${props => props.smallGridTemplateColumns ? props.smallGridTemplateColumns : ''};
+        grid-template-rows: ${props => props.smallGridTemplateRows ? props.smallGridTemplateRows : ''};
+    }
+
+    // Tablets
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        grid-template-columns: ${props => props.mediumGridTemplateColumns ? props.mediumGridTemplateColumns : ''};
+        grid-template-rows: ${props => props.mediumGridTemplateRows ? props.mediumGridTemplateRows : ''};
+    }
+
+    // Desktop
+    @media screen and (min-width: 1024px) and (max-width: 1320px) {
+        grid-template-columns: ${props => props.bigGridTemplateColumns ? props.bigGridTemplateColumns : ''};
+        grid-template-rows: ${props => props.bigGridTemplateRows ? props.bigGridTemplateRows : ''};
+    }
+
+    // Big Desktop
+    @media screen and (min-width: 1321px) {
+        grid-template-columns: ${props => props.gridTemplateColumns ? props.gridTemplateColumns : ''};
+        grid-template-rows: ${props => props.gridTemplateRows ? props.gridTemplateRows : ''};
+    }
 `
 
 StyledGridContainer.displayName = 'div';

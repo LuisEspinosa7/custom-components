@@ -75,6 +75,12 @@ const Viewer = () => {
       <StyledGridContainer
         gridTemplateColumns="repeat(6, 1fr)"
         gridTemplateRows="repeat(1, 1fr)"
+        bigGridTemplateColumns="repeat(4, 1fr)"
+        bigGridTemplateRows="repeat(1, 1fr)"
+        mediumGridTemplateColumns="repeat(3, 1fr)"
+        mediumGridTemplateRows="repeat(2, 1fr)"
+        smallGridTemplateColumns="repeat(1, 1fr)"
+        smallGridTemplateRows="repeat(6, 1fr)"
         gridGap="1rem"
         width="100%"
         verticalPadding="1rem"
@@ -153,7 +159,7 @@ const Viewer = () => {
                 borderThickness="5px"
                 width="40px"
                 height="40px"
-                color="#000"
+                color={theme.colors.primary.normal}
               />
             </StyledFlexContainer>
           </StyledGridContainer>
@@ -311,7 +317,7 @@ const Viewer = () => {
 
 
       <StyledGridContainer
-        gridTemplateColumns="repeat(2, 1fr)"
+        gridTemplateColumns="repeat(1, 1fr)"
         gridTemplateRows="repeat(1, 1fr)"
         gridGap="1rem"
         width="100%"
@@ -319,15 +325,14 @@ const Viewer = () => {
         horizontalPadding="1rem">
 
         <StyledCard
-          width="500px"
-          height="300px"
+          width="350px"
+          height="240px"
           backgroundColor={theme.colors.secondary.normal}
           margin="auto"
         >
           <StyledGridContainer
             gridTemplateColumns="1fr"
-            gridTemplateRows="1fr 5fr"
-            gridGap="1rem"
+            gridTemplateRows="1fr 6fr"
             width="100%"
             verticalPadding="0.6rem"
             horizontalPadding="0.6rem"
@@ -344,16 +349,29 @@ const Viewer = () => {
                     colorBottomTable={theme.colors.accent.normal} 
                     hoverColor={theme.colors.accent.normal}
                     colorNormalRow={theme.colors.primary.normal} 
-                    colorEvenRow={theme.colors.secondary.normal}/>
+                    colorEvenRow={theme.colors.secondary.normal}
+                    verticalMargin="0.6rem"
+                    horizontalMargin="0"
+                    tableMinWidth="300px"/>
             </StyledFlexContainer>
 
           </StyledGridContainer>
         </StyledCard>
 
+      </StyledGridContainer>
+
+
+      <StyledGridContainer
+        gridTemplateColumns="repeat(1, 1fr)"
+        gridTemplateRows="repeat(1, 1fr)"
+        gridGap="1rem"
+        width="100%"
+        verticalPadding="1rem"
+        horizontalPadding="1rem">
 
         <StyledCard
           width="700px"
-          height="450px"
+          height="500px"
           backgroundColor={theme.colors.secondary.normal}
           margin="auto"
         >
@@ -378,7 +396,6 @@ const Viewer = () => {
 
           </StyledGridContainer>
         </StyledCard>
-
 
       </StyledGridContainer>
     </>

@@ -10,6 +10,23 @@ export const StyledH2Title = styled.h2`
     font-weight: ${props => props.fontWeight ? props.fontWeight : ''};
     text-shadow: ${props => props.textShadow ? props.textShadow : ''};
     color: ${props => props.color ? props.color : ''};
+
+     /* // Mobile
+    @media screen and (max-width: 767px) {
+        padding: ${props => props.smallPadding ? props.smallPadding : ''};
+        margin: ${props => props.smallMargin ? props.smallMargin : ''};
+    }
+
+    // Tablets
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        padding: ${props => props.mediumPadding ? props.mediumPadding : ''};
+        margin: ${props => props.mediumMargin ? props.mediumMargin : ''};
+    } */
+
+    // Desktop
+    @media screen and (min-width: 1024px) {
+        font-size: ${props => props.bigFontSize ? props.bigFontSize : ''};
+    }
 `
 
 StyledH2Title.displayName = 'h2';

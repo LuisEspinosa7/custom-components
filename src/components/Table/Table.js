@@ -1,11 +1,11 @@
 import React from 'react'
 import { StyledTableBodyColum, StyledTableBodyRow, StyledTableContainer, StyledTableHeader, StyledTableHeaderColumn } from './Table.styled'
 
-const Table = ({ headers, data, headerColor, colorBottomTable, hoverColor, colorNormalRow, colorEvenRow }) => {
+const Table = ({ headers, data, headerColor, colorBottomTable, hoverColor, colorNormalRow, colorEvenRow, verticalMargin, horizontalMargin, tableMinWidth }) => {
   
   return (
     <>
-        <StyledTableContainer>
+        <StyledTableContainer verticalMargin={verticalMargin} horizontalMargin={horizontalMargin} tableMinWidth={tableMinWidth}>
             <StyledTableHeader 
                 headerColor={headerColor}>
                 <tr>
