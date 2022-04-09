@@ -38,6 +38,7 @@ const Search = ({
     return (
       <>
         <StyledSearchInput
+          role="textbox"
           type="text"
           placeholder={placeholder}
           name="q"
@@ -57,8 +58,10 @@ const Search = ({
     return (
       <>
         <StyledSearchInput
+          role="textbox"
           type="text"
           ref={searchInput}
+          name="q"
           placeholder={placeholder}
           disabled={disabled}
           fontSize={fontSize}
@@ -68,6 +71,7 @@ const Search = ({
           placeholderColor={placeholderColor}
         />
         <StyledSearchButton
+        role="button"
           iconWidth={iconWidth}
           iconHeight={iconHeight}
           onClick={handleClickSearch}
@@ -85,6 +89,7 @@ const Search = ({
   return (
     <StyledSearchContainer
       maxWidth={maxWidth}
+      role="form"
       colorDisabled={colorDisabled}
       verticalContainerPadding={verticalContainerPadding}
       horizontalContainerPadding={horizontalContainerPadding}

@@ -19,9 +19,10 @@ const Dropdown = ({ options, setSelected, defaultOption, width, color, fontSize,
         verticalPadding="15px"
         horizontalPadding="20px"
         onClick={(e) => setIsActive(!isActive)}
-        className={`${disabled ? "disabled" : ""}`}>
+        className={`${disabled ? "disabled" : ""}`}
+        role="menu">
         {optionSelected}
-        <AiFillCaretDown />
+        <AiFillCaretDown role="img"/>
       </StyledDropdownButton>
       {isActive && (
         <StyledDropdownContent 
@@ -31,6 +32,7 @@ const Dropdown = ({ options, setSelected, defaultOption, width, color, fontSize,
           {options.map((option) => (
             <StyledDropdownItem
               key={option.key}
+              role="menuitem"
               hoverColor={hoverColor}
               padding={contentPadding}
               onClick={(e) => {

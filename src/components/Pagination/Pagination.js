@@ -18,7 +18,8 @@ const Pagination = ({
   activeColor,
   color,
   selected,
-  disabled
+  disabled,
+  colorDisabled
 }) => {
   const pageNumbers = [];
 
@@ -29,12 +30,16 @@ const Pagination = ({
   return (
     <StyledPaginationContainer 
       className={`${disabled ? "disabled" : ""}`}
-      backgroundColor={backgroundColor}>
-      <StyledPaginationList>
+      backgroundColor={backgroundColor}
+      role="navigation"
+      colorDisabled={colorDisabled}>
+      <StyledPaginationList
+        role="list">
         {pageNumbers.length > 0 &&
           pageNumbers.map((number) => (
             <StyledPaginationListItem
               key={number}
+              role="listitem"
               verticalPadding={verticalPadding}
               horizontalPadding={horizontalPadding}
               fontSize={fontSize}
@@ -46,6 +51,7 @@ const Pagination = ({
               }}
             >
               <StyledPaginationLink
+                role="link"
                 color={color}>{number}</StyledPaginationLink>
             </StyledPaginationListItem>
           ))}

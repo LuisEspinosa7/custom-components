@@ -16,12 +16,14 @@ const Header = () => {
       smallMargin="1rem 0">
       <StyledH1Title
         fontWeight="500"
-        bigFontSize="3rem">Custom Components</StyledH1Title>
+        bigFontSize="3rem"
+        role="heading">Custom Components</StyledH1Title>
       <StyledH2Title
         fontWeight="300"
         fontFamily="Beau Rivage"
         color={theme.colors.secondary.lighter}
-        bigFontSize="2rem"> (by Luis Espinosa)</StyledH2Title>
+        bigFontSize="2rem"
+        role="heading">(by Luis Espinosa)</StyledH2Title>
     </StyledFlexContainer>
   )
 }

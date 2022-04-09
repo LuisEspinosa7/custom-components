@@ -11,6 +11,7 @@ const TypingLoader = ({ blickWidth, blickColor, textColor, animationSeconds }) =
       <StyledTypingLoaderText
         textColor={textColor}
         animationSeconds={animationSeconds}
+        role="heading"
       >
         Loading...
       </StyledTypingLoaderText>
