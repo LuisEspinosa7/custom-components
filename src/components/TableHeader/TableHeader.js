@@ -5,14 +5,19 @@ import { StyledDataTableHeader, StyledDataTableHeaderColumn } from "./TableHeade
 const TableHeader = ({ headers, theme }) => {
   return (
     <StyledDataTableHeader
+      role="rowheader"
       headerColor={theme.colors.secondary.lighter}>
-      <tr>
-        <StyledDataTableHeaderColumn key={1}>
-          <AiOutlineSelect />
+      <tr role="row">
+        <StyledDataTableHeaderColumn
+          role="columnheader"
+          key={1}>
+          <AiOutlineSelect role="img"/>
         </StyledDataTableHeaderColumn>
         {headers &&
           headers.map((element) => (
-            <StyledDataTableHeaderColumn key={element}>
+            <StyledDataTableHeaderColumn 
+              role="columnheader"
+              key={element}>
               {element}
             </StyledDataTableHeaderColumn>
           ))}

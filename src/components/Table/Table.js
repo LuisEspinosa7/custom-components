@@ -5,28 +5,36 @@ const Table = ({ headers, data, headerColor, colorBottomTable, hoverColor, color
   
   return (
     <>
-        <StyledTableContainer verticalMargin={verticalMargin} horizontalMargin={horizontalMargin} tableMinWidth={tableMinWidth}>
+        <StyledTableContainer 
+            role="table"
+            verticalMargin={verticalMargin} 
+            horizontalMargin={horizontalMargin} 
+            tableMinWidth={tableMinWidth}>
             <StyledTableHeader 
+                role="rowheader"
                 headerColor={headerColor}>
-                <tr>
+                <tr role="row">
                     {headers && headers.map((element) => (
-                        <StyledTableHeaderColumn key={element}>{element}</StyledTableHeaderColumn>
+                        <StyledTableHeaderColumn
+                            role="columnheader"
+                            key={element}>{element}</StyledTableHeaderColumn>
                     ))}
                 </tr>
             </StyledTableHeader>
 
             <tbody>
                 { data && data.map((element) => (
-                    <StyledTableBodyRow 
+                    <StyledTableBodyRow
+                        role="row" 
                         key={element.id}
                         colorBottomTable={colorBottomTable}
                         hoverColor={hoverColor}
                         colorNormalRow={colorNormalRow}
                         colorEvenRow={colorEvenRow}>
-                        <StyledTableBodyColum>{element.id}</StyledTableBodyColum>
-                        <StyledTableBodyColum>{element.name}</StyledTableBodyColum>
-                        <StyledTableBodyColum>{element.points}</StyledTableBodyColum>
-                        <StyledTableBodyColum>{element.team}</StyledTableBodyColum>
+                        <StyledTableBodyColum role="cell">{element.id}</StyledTableBodyColum>
+                        <StyledTableBodyColum role="cell">{element.name}</StyledTableBodyColum>
+                        <StyledTableBodyColum role="cell">{element.points}</StyledTableBodyColum>
+                        <StyledTableBodyColum role="cell">{element.team}</StyledTableBodyColum>
                     </StyledTableBodyRow>
                 ))}
                 

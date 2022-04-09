@@ -18,12 +18,14 @@ const TableRow = ({
 }) => {
   return (
     <StyledDataTableBodyRow
+      role="row"
       colorBottomTable={colorBottomTable}
       hoverColor={hoverColor}
       colorNormalRow={colorNormalRow}
       colorEvenRow={colorEvenRow}
     >
-      <StyledDataTableBodyColum>
+      <StyledDataTableBodyColum
+        role="cell">
         <CheckBox
           data={element}
           handleOnChange={handleItemSelected}
@@ -34,7 +36,9 @@ const TableRow = ({
 
     {rowColumns && rowColumns.map(rowColumn => {
       return (
-        <StyledDataTableBodyColum key={`${element['id']+rowColumn} `}>
+        <StyledDataTableBodyColum 
+          role="cell"
+          key={`${element['id']+rowColumn} `}>
           {element[`${rowColumn}`]}
         </StyledDataTableBodyColum>
       )

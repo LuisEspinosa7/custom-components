@@ -24,8 +24,8 @@ test('should render CheckBox by default disabled', () => {
         />
     );
 
-    expect(screen.getAllByRole('input').length).toBe(1);
-    expect(screen.getAllByRole('input')[0]).toBeDisabled();
+    expect(screen.getAllByRole('checkbox').length).toBe(1);
+    expect(screen.getAllByRole('checkbox')[0]).toBeDisabled();
 })
 
 
@@ -39,9 +39,9 @@ test('should render CheckBox enabled and checked', () => {
         />
     );
 
-    expect(screen.getAllByRole('input').length).toBe(1);
-    expect(screen.getAllByRole('input')[0]).not.toBeDisabled();
-    expect(screen.getAllByRole('input')[0]).toBeChecked();
+    expect(screen.getAllByRole('checkbox').length).toBe(1);
+    expect(screen.getAllByRole('checkbox')[0]).not.toBeDisabled();
+    expect(screen.getAllByRole('checkbox')[0]).toBeChecked();
 })
 
 test('should render CheckBox enabled, not checked and click', () => {
@@ -56,9 +56,9 @@ test('should render CheckBox enabled, not checked and click', () => {
         />
     );
 
-    expect(screen.getAllByRole('input').length).toBe(1);
-    expect(screen.getAllByRole('input')[0]).not.toBeDisabled();
-    expect(screen.getAllByRole('input')[0]).not.toBeChecked();
-    userEvent.click(screen.getAllByRole('input')[0]); // Click on the checkbox
+    expect(screen.getAllByRole('checkbox').length).toBe(1);
+    expect(screen.getAllByRole('checkbox')[0]).not.toBeDisabled();
+    expect(screen.getAllByRole('checkbox')[0]).not.toBeChecked();
+    userEvent.click(screen.getAllByRole('checkbox')[0]); // Click on the checkbox
     expect(callbackFunction).toHaveBeenCalled();
 })

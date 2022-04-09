@@ -7,7 +7,7 @@ const CheckBox = ({ handleOnChange, data, checked, disabled }) => {
     <>
       <StyledDataTableBodyCheckBox
         type="checkbox"
-        role="input"
+        role="checkbox"
         checked={checked}
         disabled={disabled}
         onChange={() => handleOnChange(data)}
