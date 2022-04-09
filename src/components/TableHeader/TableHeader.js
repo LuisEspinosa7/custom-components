@@ -5,7 +5,7 @@ import { StyledDataTableHeader, StyledDataTableHeaderColumn } from "./TableHeade
 const TableHeader = ({ headers, theme }) => {
   return (
     <StyledDataTableHeader
-      role="rowheader"
+      role="rowgroup"
       headerColor={theme.colors.secondary.lighter}>
       <tr role="row">
         <StyledDataTableHeaderColumn

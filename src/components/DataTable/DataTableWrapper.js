@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useTheme } from "styled-components";
 import DataTable from "./DataTable";
 
-const DatatableWrapper = () => {
+const DatatableWrapper = (selectionMode) => {
   const theme = useTheme();
   const [checkedList, setCheckedList] = useState([]);
   const [data, setData] = useState([]);

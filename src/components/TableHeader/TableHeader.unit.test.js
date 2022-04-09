@@ -12,7 +12,7 @@ test('should render TableMessage by default', () => {
         </table>
     );
 
-    expect(screen.getAllByRole('rowheader').length).toBe(1);
+    expect(screen.getAllByRole('rowgroup').length).toBe(1);
     expect(screen.getAllByRole('row').length).toBe(1);
     expect(screen.getAllByRole('columnheader').length).toBe(3);
     expect(screen.getAllByRole('img').length).toBe(1);
