@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Custom Components
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Custom components is an app which is composed of several individual custom components develop all by myself (Luis Espinosa) to demostrate how to build a component from others, taking them together to form a Datatable with some advantages. it was developed using HTML, CSS3+, Yarn, ReactJS, StyledComponents, ReactIcons and for the tests Jest,  React testing library and Mock Service Worker (mock API Calls in tests). It was written using the best practices for instance, a component oriented approach, UX Design rule (60% 30% 10%), variables, REMs, Responsiveness, mobile first approach, good tests coverage, mocked api calls in tests and more... 
 
-## Available Scripts
+## DataTable Information
+There are several components which you can use individualy, but the final product is a Datatable
+which support the following characteristics:
+```
+- Row per page.
+- Search with typing event or with a search icon button.
+- Pagination.
+- Not found message.
+- API error message.
+- Asyn API call.
+- Single or Multiple row selection mode.
+```
 
-In the project directory, you can run:
+## Desktop video
+A videos exposing the functionality of the proyect in local environment on a Desktop screen.
 
-### `yarn start`
+https://user-images.githubusercontent.com/56041525/161471233-4cb42894-0b71-41b5-b7e7-884872f6560e.mov
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Mobile videos
+Some videos of the project on iPHONE-SE, iPAD-AIR,  Galaxy S7 respectively:
 
-### `yarn test`
+<table style="width:100%">
+  <tr>
+    <td>
+  		<img width="450" alt="iPHONE-SE" src="https://user-images.githubusercontent.com/56041525/161471265-ce927a36-a8e0-4b93-a034-f77631e96d43.png">
+	  </td>
+    <td>
+  	<img width="450" alt="iPHONE-XR" src="https://user-images.githubusercontent.com/56041525/161471636-c4b5aade-772f-4bc7-aa0d-94122a0c64f7.png">
+    </td>
+  </tr>
+</table>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+<table style="width:100%">
+  <tr>
+    <td>
+  		<img width="450" alt="iPAD-AIR" src="https://user-images.githubusercontent.com/56041525/161471672-5c5f3312-ca4d-4c2f-a1c7-d349c3c18fb3.png">
+	  </td>
+    <td>
+  	<img width="450" alt="iPAD-MINI" src="https://user-images.githubusercontent.com/56041525/161471692-4fadca29-b200-46cb-9bc7-c13ceb8c2c14.png">
+    </td>
+  </tr>
+</table>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Online demo
+Do you want to give it a try? Go on! 
+https://luisespinosa7.github.io/counter/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `yarn eject`
+This proyect should be installed using the following command:
+```bash
+yarn install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
+Please use the following command:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+yarn start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Tests and coverage
+Please use the following command:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+yarn test --coverage --watchAll
+```
 
-## Learn More
+And you should get the following results:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<table style="width:100%">
+  <tr>
+    <td>
+  		<img width="705" alt="command" src="https://user-images.githubusercontent.com/56041525/161893026-d87f1301-12ca-4ed0-adb2-77618081b235.png">
+	  </td>
+    <td>
+  	<img width="1432" alt="report" src="https://user-images.githubusercontent.com/56041525/161893047-a7e578ca-9a39-424e-bdcc-15edecc63253.png">
+    </td>
+  </tr>
+</table>
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
+This proyect is quite simple, and is part of my personal portfolio, so it is not intended to receive contributions.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+It is free.
