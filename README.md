@@ -18,17 +18,7 @@ which support the following characteristics:
 ## Desktop video
 A videos exposing the functionality of the proyect in local environment on a Desktop screen.
 
-asadas
-
-
-
-
-
-
-
-
-
-
+https://user-images.githubusercontent.com/56041525/162602527-8d95a56f-521d-4719-b427-aad54939ef5d.mov
 
 
 ## Mobile videos
@@ -39,12 +29,6 @@ https://user-images.githubusercontent.com/56041525/162602077-eba8bb0a-3975-4c56-
 https://user-images.githubusercontent.com/56041525/162602088-cc6f1366-990a-42ca-83f7-6db96a81e101.mov
 
 https://user-images.githubusercontent.com/56041525/162602117-e5e0e897-6e33-4ad5-a31a-147f1be462b1.mov
-
-
-## Responsive
-All content is responsive:
-
-
 
 
 ## Online demo
@@ -73,10 +57,6 @@ yarn test --coverage --watchAll
 ```
 
 And you should get the following results:
-
-
-
-
 
 
 <table style="width:100%">
