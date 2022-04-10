@@ -24,7 +24,8 @@ const Datatable = ({
   theme,
   minWidth,
   tableMaxWidth,
-  hasSearchButton
+  hasSearchButton,
+  searchMaxWidth
 }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [rowsPerPage, setRowsPerPage] = useState(rowsPerPageList[0].value);
@@ -228,7 +229,7 @@ const Datatable = ({
             <Search
               placeholder="Search..."
               hasSearchButton={hasSearchButton ? hasSearchButton : "false"}
-              maxWidth="300px"
+              maxWidth={searchMaxWidth}
               imageColor={theme.colors.primary.normal}
               handleSearch={handleSearch}
               disabled={loading || dataError}

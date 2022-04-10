@@ -68,8 +68,9 @@ const DatatableWrapper = ({isMultipleSelection}) => {
         rowsPerPageList={rowsPerPageList}
         dataError={dataError}
         theme={theme}
-        //minWidth="325px"
-        maxWidth="340px"
+        minWidth="325px"
+        //maxWidth="340px"
+        searchMaxWidth="245px"  
       />
     </>
   );
