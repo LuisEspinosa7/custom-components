@@ -23,6 +23,7 @@ const Datatable = ({
   dataError,
   theme,
   minWidth,
+  tableMaxWidth,
   hasSearchButton
 }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -37,7 +38,7 @@ const Datatable = ({
     const filteredTotalRows = () => {
       return data.filter((item) => {
         for (var column of searchableColumns) {
-          console.log("Column: " + column);
+          //console.log("Column: " + column);
           if (item[`${column}`].toString().includes(searchTerm)) {
             return true;
           }
@@ -51,7 +52,7 @@ const Datatable = ({
       return data
         .filter((item) => {
           for (var column of searchableColumns) {
-            console.log("Column: " + column);
+            //console.log("Column: " + column);
             if (item[`${column}`].toString().includes(searchTerm)) {
               return true;
             }
@@ -63,16 +64,16 @@ const Datatable = ({
 
     // Only if it is not loading and it has no error, all parameters will be calculated
     if(!loading && !dataError) {
-      console.log('NO HAY ERROR');
+      //console.log('NO HAY ERROR');
       // Get current rows
       const indexOfLastRow = currentPage * rowsPerPage;
       const indexOfFirstRow = indexOfLastRow - rowsPerPage;
-      console.log("Filtered rows: " + filteredTotalRows());
+      //console.log("Filtered rows: " + filteredTotalRows());
       setTotalRows(filteredTotalRows());
-      console.log(filteredCurrentRows(indexOfLastRow, indexOfFirstRow));
+      //console.log(filteredCurrentRows(indexOfLastRow, indexOfFirstRow));
       setCurrentRows(filteredCurrentRows(indexOfLastRow, indexOfFirstRow));
     } else if(!loading && dataError) {
-      console.log('HAY UN ERROR');
+      //console.log('HAY UN ERROR');
     }
     
   }, [data, currentPage, rowsPerPage, searchTerm, searchableColumns, dataError, loading]);
@@ -238,7 +239,8 @@ const Datatable = ({
           </div>
         </StyledFlexContainer>
         <StyledDataTableContainer margin="0px"
-          minWidth={minWidth}>
+          minWidth={minWidth}
+          maxWidth={tableMaxWidth}>
           <TableHeader headers={headers} theme={theme} />
 
           <tbody>

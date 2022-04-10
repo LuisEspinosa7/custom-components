@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useTheme } from "styled-components";
 import DataTable from "./DataTable";
 
-const DatatableWrapper = (selectionMode) => {
+const DatatableWrapper = ({isMultipleSelection}) => {
   const theme = useTheme();
   const [checkedList, setCheckedList] = useState([]);
   const [data, setData] = useState([]);
@@ -24,8 +24,8 @@ const DatatableWrapper = (selectionMode) => {
       setLoading(false);
     })
     .catch(error => {
-      console.log('ERROR EN API');
-      console.log(error);
+      //console.log('ERROR EN API');
+      //console.log(error);
       setDataError(true);
       setData([]);
       setLoading(false);
@@ -33,15 +33,15 @@ const DatatableWrapper = (selectionMode) => {
   }, []);
 
   const handleItemSelected = (element) => {
-    console.log(element);
+    //console.log(element);
 
     if (checkedList.length > 0) {
         let found = checkedList.find((elem) => {
             return elem.id === element.id
         })
 
-        console.log('Found:');
-        console.log(found);
+        //console.log('Found:');
+        //console.log(found);
 
         if (!found) {
             setCheckedList(checkedList => [...checkedList, element]);
@@ -62,13 +62,14 @@ const DatatableWrapper = (selectionMode) => {
         handleItemSelected={handleItemSelected}
         checkedList={checkedList}
         loading={loading}
-        selectionMode="unique"
+        selectionMode={isMultipleSelection ? "multiple" : "unique"}
         dataFields={dataFields}
         searchableColumns={searchableColumns}
         rowsPerPageList={rowsPerPageList}
         dataError={dataError}
         theme={theme}
-        minWidth="325px"
+        //minWidth="325px"
+        maxWidth="340px"
       />
     </>
   );

@@ -105,7 +105,7 @@ test('should render Datatable successfully - search for a user', async () => {
 })
 
 
-test('should render Datatable - single mode selection - check one user', async () => {
+test('should render Datatable - single selection mode (default) - check one user', async () => {
     // Interceptor with 6 users with a pagination with 3 users by default
     // So there should be 3 users per page.
     renderWithTheme(
@@ -119,4 +119,29 @@ test('should render Datatable - single mode selection - check one user', async (
 
     expect(screen.getAllByRole('checkbox')[1]).toBeDisabled();
     expect(screen.getAllByRole('checkbox')[2]).toBeDisabled();
+})
+
+
+test('should render Datatable - multiple selection mode - check two users and re-select', async () => {
+    // Interceptor with 6 users with a pagination with 3 users by default
+    // So there should be 3 users per page.
+    renderWithTheme(
+        <DatatableWrapper isMultipleSelection={true} />
+    );
+    const firstRow = await screen.findAllByText('Luis');
+    expect(firstRow).toHaveLength(1);
+
+    const user1Checkbox = screen.getAllByRole('checkbox')[0];
+    userEvent.click(user1Checkbox);
+
+    expect(screen.getAllByRole('checkbox')[1]).toBeEnabled();
+    expect(screen.getAllByRole('checkbox')[2]).toBeEnabled();
+
+    const user2Checkbox = screen.getAllByRole('checkbox')[1]; 
+    userEvent.click(user2Checkbox); // Checked the second user
+
+    expect(screen.getAllByRole('checkbox')[2]).toBeEnabled();
+    userEvent.click(user2Checkbox); // Unchecked the second user
+
+    expect(screen.getAllByRole('checkbox')[1]).toBeEnabled();
 })

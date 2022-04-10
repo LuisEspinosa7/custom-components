@@ -40,12 +40,12 @@ const Viewer = () => {
   const itemsPerPage = 5;
   const totalItems = 20;
   const handlePaginate = () => {
-    console.log("Paginate....");
+    //console.log("Paginate....");
   };
 
   /* Search Bar */
   const handleSearch = (searchValue) => {
-    console.log("Searching...." + searchValue);
+    //console.log("Searching...." + searchValue);
   };
 
   /* Table */
