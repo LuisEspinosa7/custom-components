@@ -6,7 +6,7 @@ Custom components is an app which is composed of several individual custom compo
 There are several components which you can use individualy, but the final product is a Datatable
 which support the following characteristics:
 ```
-- Row per page.
+- Rows per page selection.
 - Search with typing event or with a search icon button.
 - Pagination.
 - Not found message.
@@ -18,39 +18,38 @@ which support the following characteristics:
 ## Desktop video
 A videos exposing the functionality of the proyect in local environment on a Desktop screen.
 
-https://user-images.githubusercontent.com/56041525/161471233-4cb42894-0b71-41b5-b7e7-884872f6560e.mov
+asadas
+
+
+
+
+
+
+
+
+
+
 
 
 ## Mobile videos
 Some videos of the project on iPHONE-SE, iPAD-AIR,  Galaxy S7 respectively:
 
-<table style="width:100%">
-  <tr>
-    <td>
-  		<img width="450" alt="iPHONE-SE" src="https://user-images.githubusercontent.com/56041525/161471265-ce927a36-a8e0-4b93-a034-f77631e96d43.png">
-	  </td>
-    <td>
-  	<img width="450" alt="iPHONE-XR" src="https://user-images.githubusercontent.com/56041525/161471636-c4b5aade-772f-4bc7-aa0d-94122a0c64f7.png">
-    </td>
-  </tr>
-</table>
+https://user-images.githubusercontent.com/56041525/162602077-eba8bb0a-3975-4c56-8b7c-f3e32d4f3091.mov
+
+https://user-images.githubusercontent.com/56041525/162602088-cc6f1366-990a-42ca-83f7-6db96a81e101.mov
+
+https://user-images.githubusercontent.com/56041525/162602117-e5e0e897-6e33-4ad5-a31a-147f1be462b1.mov
 
 
-<table style="width:100%">
-  <tr>
-    <td>
-  		<img width="450" alt="iPAD-AIR" src="https://user-images.githubusercontent.com/56041525/161471672-5c5f3312-ca4d-4c2f-a1c7-d349c3c18fb3.png">
-	  </td>
-    <td>
-  	<img width="450" alt="iPAD-MINI" src="https://user-images.githubusercontent.com/56041525/161471692-4fadca29-b200-46cb-9bc7-c13ceb8c2c14.png">
-    </td>
-  </tr>
-</table>
+## Responsive
+All content is responsive:
+
+
 
 
 ## Online demo
 Do you want to give it a try? Go on! 
-https://luisespinosa7.github.io/counter/
+https://luisespinosa7.github.io/custom-components/
 
 ## Installation
 
@@ -76,14 +75,26 @@ yarn test --coverage --watchAll
 And you should get the following results:
 
 
+
+
+
+
 <table style="width:100%">
   <tr>
     <td>
-  		<img width="705" alt="command" src="https://user-images.githubusercontent.com/56041525/161893026-d87f1301-12ca-4ed0-adb2-77618081b235.png">
+  		<img width="1436" alt="coverage" src="https://user-images.githubusercontent.com/56041525/162602154-8441ec98-1897-440a-8af0-61648b3dff98.png">
 	  </td>
     <td>
-  	<img width="1432" alt="report" src="https://user-images.githubusercontent.com/56041525/161893047-a7e578ca-9a39-424e-bdcc-15edecc63253.png">
+  	<img width="636" alt="unit-tests-1" src="https://user-images.githubusercontent.com/56041525/162602165-587d8b89-4a31-49d6-a9b9-03bd62f7d627.png">
     </td>
+  </tr>
+</table>
+
+<table style="width:100%">
+  <tr>
+    <td>
+  		<img width="630" alt="unit-tests-2" src="https://user-images.githubusercontent.com/56041525/162602179-5e605a4e-1f26-4796-8dec-f34fc0d78429.png">
+	  </td>
   </tr>
 </table>
 
